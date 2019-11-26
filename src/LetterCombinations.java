@@ -26,7 +26,7 @@ import java.util.*;
 public class LetterCombinations {
 
     private static final Map<Character, List<Character>> dictionaryMap = new HashMap<>();
-    
+
     static {
         dictionaryMap.put('2', Arrays.asList('a', 'b', 'c'));
         dictionaryMap.put('3', Arrays.asList('d', 'e', 'f'));
