@@ -1,3 +1,5 @@
+import structure.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,15 +28,6 @@ import java.util.List;
 //链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 public class RemoveNthFromEnd {
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         if (null == head) {
