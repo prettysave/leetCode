@@ -13,4 +13,11 @@ public class Utils {
             node = node.next;
         }
     }
+
+    public static void printArray(int[] nums, String name) {
+        System.out.println(name + "的值：");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+    }
 }
