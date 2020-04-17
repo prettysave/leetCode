@@ -3,7 +3,7 @@ package demo;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Auther: heyong
+ * @Author: heyong
  * @Date: 2019-11-25 16:52
  * @Description:
  */

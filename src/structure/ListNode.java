@@ -1,7 +1,7 @@
 package structure;
 
 /**
- * @Auther: heyong
+ * @Author: heyong
  * @Date: 2019-11-27 15:48
  * @Description:
  */

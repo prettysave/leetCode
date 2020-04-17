@@ -64,7 +64,7 @@ public class FindMedianSortedArrays {
 
     public static void main(String[] args) {
         int[] nums1 = {1, 3};
-        int[] nums2 = {2};
+        int[] nums2 = {4,5,6,7,8,9,10};
         double medianSortedArrays = findMedianSortedArrays(nums1, nums2);
         System.out.println(medianSortedArrays);
     }

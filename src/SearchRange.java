@@ -1,7 +1,7 @@
 import structure.Utils;
 
 /**
- * @Auther: heyong
+ * @Author: heyong
  * @Date: 2019-12-25 14:23
  * @Description:
  */
@@ -71,6 +71,9 @@ public class SearchRange {
         int[] result2 = demo.searchRange(nums, target2);
         Utils.printArray(result1, "result1");
         Utils.printArray(result2, "result2");
+
+        String s = (String) null;
+        System.out.println(s + ":!!!");
     }
 }
 

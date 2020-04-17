@@ -1,7 +1,9 @@
 package structure;
 
+import java.util.List;
+
 /**
- * @Auther: heyong
+ * @Author: heyong
  * @Date: 2019-11-29 15:51
  * @Description:
  */
@@ -19,5 +21,11 @@ public class Utils {
         for (int i = 0; i < nums.length; i++) {
             System.out.println(nums[i]);
         }
+    }
+
+    public static void printArrayList(List<List<Integer>> result) {
+        result.forEach(list -> {
+            System.out.println(list);
+        });
     }
 }

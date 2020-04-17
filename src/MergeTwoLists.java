@@ -1,7 +1,7 @@
 import structure.ListNode;
 
 /**
- * @Auther: heyong
+ * @Author: heyong
  * @Date: 2019-11-27 15:46
  * @Description:
  */
