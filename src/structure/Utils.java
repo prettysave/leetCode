@@ -23,9 +23,7 @@ public class Utils {
         }
     }
 
-    public static void printArrayList(List<List<Integer>> result) {
-        result.forEach(list -> {
-            System.out.println(list);
-        });
+    public static <E> void printArrayList(List<List<E>> result) {
+        result.forEach(System.out::println);
     }
 }
