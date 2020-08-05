@@ -1,5 +1,7 @@
 package structure;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
@@ -25,5 +27,21 @@ public class Utils {
 
     public static <E> void printArrayList(List<List<E>> result) {
         result.forEach(System.out::println);
+    }
+
+    public static String getDateString() {
+        LocalDate startDate = LocalDate.of(2019, 9, 1);
+        LocalDate endDate = LocalDate.of(2020, 5, 1);
+        String str = "";
+        while (startDate.isBefore(endDate)) {
+            str += "p" + startDate.format(DateTimeFormatter.ofPattern("yyyyMMdd")) + ",";
+            startDate = startDate.plusDays(1);
+        }
+        return str;
+    }
+
+    public static void main(String[] args) {
+        String dateString = Utils.getDateString();
+        System.out.println(dateString);
     }
 }
