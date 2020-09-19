@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 /**
@@ -56,5 +57,6 @@ public class LongestValidParentheses {
         LongestValidParentheses demo = new LongestValidParentheses();
         int i = demo.longestValidParentheses("()(()");
         System.out.println(i);
+
     }
 }

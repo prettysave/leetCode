@@ -31,7 +31,6 @@ public class MergeTwoLists {
         ListNode next = result;
         // 只要两个Node中有一个还有值即可进行
         while (l1NextNode != null || l2NextNode != null) {
-
             // 当有一个Node是Null的时候 把另外一个ListNode的剩余部分直接链上result 退出循环
             if (l1NextNode == null) {
                 next.next = l2NextNode;
@@ -41,12 +40,10 @@ public class MergeTwoLists {
                 next.next = l1NextNode;
                 break;
             }
-
             // 根据较小值构造一个新结点 并链到result上
             ListNode newNode = new ListNode(Math.min(l1NextNode.val, l2NextNode.val));
             next.next = newNode;
             next = next.next;
-
             // 被链上的Node后移
             if (l1NextNode.val > l2NextNode.val) {
                 l2NextNode = l2NextNode.next;
@@ -54,7 +51,6 @@ public class MergeTwoLists {
                 l1NextNode = l1NextNode.next;
             }
         }
-
         //  结果是第二个
         return result.next;
     }

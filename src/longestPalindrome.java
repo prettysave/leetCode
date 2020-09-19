@@ -26,23 +26,31 @@ public class longestPalindrome {
         }
         int left = 0;
         int right = 0;
+        // 以字符串中的每个字符为中心节点 向两边延伸得到最长的回文串
         for (int i = 0; i < s.length() - 1; i++) {
+            // 回文串字符个数为奇数
             int len1 = longestPalindromeHelper(s, i, i);
+            // 回文串字符个数为偶数
             int len2 = longestPalindromeHelper(s, i, i + 1);
+            // 判断奇数回文串和偶数回文串的大小 取大的
             int maxLen = Math.max(len1, len2);
+            // 和历史得到的最大回文串长度比较 如果当前比历史的大 则更新对应的Index
             if (maxLen > right - left + 1) {
                 left = i - (maxLen - 1) / 2;
                 right = i + maxLen / 2;
             }
         }
+        // 根据得到的左边index 和右边index截取字符串
         return s.substring(left, right + 1);
     }
 
     public static int longestPalindromeHelper(String s, int left, int right) {
+        // 左边&右边都没有越界 并且 左边的字符与右边的字符相同
         while (left >= 0 && right <= s.length() - 1 && s.charAt(left) == s.charAt(right)) {
             left--;
             right++;
         }
+        // 不满足上述条件 返回当前回文串的长度
         return right - left - 1;
     }
 

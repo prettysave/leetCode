@@ -26,13 +26,16 @@ public class LongestConsecutive {
         }
         int result = 0;
         for (int num : numSet) {
+            // 确定连续序列中最小的值
             if (!numSet.contains(num - 1)) {
                 int curr = num;
                 int currResult = 1;
+                // 判断set中是否有与当前值连续（比curr大1）的数 有则继续循环下去
                 while (numSet.contains(curr + 1)) {
                     curr++;
                     currResult++;
                 }
+                // 无法继续连续 得到新的result 与历史result比较 取最大值
                 result = Math.max(result, currResult);
             }
         }

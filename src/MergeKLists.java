@@ -1,10 +1,8 @@
-import structure.ListNode;
-import structure.Utils;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import structure.ListNode;
+import structure.Utils;
 
 /**
  * @Author: heyong
