@@ -60,6 +60,7 @@ public class CombinationSum2 {
                 }
                 // 把当前下标的值放到list中
                 list.add(candidates[i]);
+                // 一个数字只能出现一次 这里需要从下个下标开始递归
                 combinationSumHelper(list, target - candidates[i], candidates, i + 1);
                 // 递归之后要把前一个值删掉 相当于每循环一次 都用数组对应的下标值才占位尝试 尝试之后删除 下一个数继续这个流程
                 list.remove(list.size() - 1);

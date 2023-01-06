@@ -61,6 +61,7 @@ public class CombinationSum {
             for (int i = startIndex; i < candidates.length; i++) {
                 // 把当前下标的值放到list中
                 list.add(candidates[i]);
+                // 因为是无限次使用 所以继续从当前下标开始递归
                 combinationSumHelper(list, target - candidates[i], candidates, i);
                 // 递归之后要把前一个值删掉 相当于每循环一次 都用数组对应的下标值才占位尝试 尝试之后删除 下一个数继续这个流程
                 list.remove(list.size() - 1);
@@ -72,7 +73,7 @@ public class CombinationSum {
         CombinationSum demo = new CombinationSum();
 
         int[] candidates = new int[]{2, 3, 6, 7};
-        int target1 = 7;
+        int target1 = 8;
         List<List<Integer>> result = demo.combinationSum(candidates, target1);
         System.out.println(result);
     }
