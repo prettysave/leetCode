@@ -23,10 +23,7 @@
 //输出: 2
 //
 //解释: 你可以拼出 "10"，但之后就没有剩余数字了。更好的选择是拼出 "0" 和 "1" 。
-//
-//来源：力扣（LeetCode）
-//链接：https://leetcode-cn.com/problems/ones-and-zeroes
-//著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 public class FindMaxForm {
 
     public int findMaxForm(String[] strs, int m, int n) {

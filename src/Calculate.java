@@ -25,6 +25,7 @@ import sun.jvm.hotspot.utilities.Assert;
  * s 表示一个有效的表达式
  */
 public class Calculate {
+
     public int getResult(String str) {
         Stack<Integer> number = new Stack<>();
         Stack<Character> symbol = new Stack<>();
